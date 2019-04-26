@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Financial Calculator</title>
+  </head>
+  <body>
+    <h1 id="title">
+      Financial Calculator
+    </h1>
+    <div class="container">
+      <div class="row">
+        <div class="col align-self-center">
+          <h3>Distribution Calculator</h3>
+          <h4>Net Distribution</h4>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Gross Amount</span>
+            </div>
+            <input type="number" class="form-control" placeholder="0.00" aria-label="Username" aria-describedby="basic-addon1" id="grossAmount">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Federal Withholdings (%)</span>
+            </div>
+            <input type="number" class="form-control" placeholder="0.00" aria-label="Username" aria-describedby="basic-addon1" id="federalWith">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">State Withholdings (%)</span>
+            </div>
+            <input type="number" class="form-control" placeholder="0.00" aria-label="Username" aria-describedby="basic-addon1" id="stateWith">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Fee</span>
+            </div>
+            <input type="number" class="form-control" placeholder="0.00" aria-label="Username" aria-describedby="basic-addon1" id="fee">
+          </div>
+          <button class="btn btn-primary" id="totalButton" type="button">Calculate</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col align-self-center" id="totalHoldr">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Total</span>
+            </div>
+            <input type="text" class="form-control" placeholder="0.00" aria-label="Username" aria-describedby="basic-addon1" id="total">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="dist/app.js"></script>
+</html>
