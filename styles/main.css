@@ -1,11 +1,30 @@
 body{
-  background-color: slateblue;
+  background: no-repeat center center fixed;
+  background-image: linear-gradient(to bottom, #002d72, #6cc24a);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 #title{
   text-align: center;
+  color: white;
+}
+
+.header{
+  color: white;
 }
 
 #totalHoldr{
   padding-top: 1em;
+}
+
+#totalButton{
+  margin-bottom: 1em;
+}
+
+#forteraLogo{
+width: 14.8125em;
+height: 5.75em;
 }
