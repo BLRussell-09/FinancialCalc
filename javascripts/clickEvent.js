@@ -1,19 +1,19 @@
 function buttonClick()
 {
    var button = document.getElementById('totalButton')
-   button.addEventListener("click", grossTotal)
+   button.addEventListener("click", netTotal)
 }
 
-function grossTotal()
+function netTotal()
 {
-  var gross = document.getElementById('grossAmount').value * 1;
-  var federalWith = document.getElementById('federalWith').value * 1;
-  var stateWith = document.getElementById('stateWith').value * 1;
+  var desiredNet = document.getElementById('desNet').value * 1;
+  var withholdings = document.getElementById('totalWith').value * 1;
   var fee = document.getElementById('fee').value * 1;
-  var sum = gross - ((gross * federalWith /100) + (gross * stateWith / 100) + fee);
   var total = document.getElementById('total');
-  total.value = sum.toFixed(2);
-  console.log(sum);
+  withholdings = 1 - (withholdings / 100);
+  var sum = desiredNet / withholdings;
+  sum = sum + fee
+  total.value = sum.toFixed(2)
 }
 
 function initializer()
