@@ -1,0 +1,11 @@
+body{
+  background-color: slateblue;
+}
+
+#title{
+  text-align: center;
+}
+
+#totalHoldr{
+  padding-top: 1em;
+}
