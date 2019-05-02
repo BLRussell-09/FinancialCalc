@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="X-UA-Compatible" content="IE">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
     <title>Financial Calculator</title>
@@ -18,36 +20,35 @@
         <img src="./images/Fortera237x92.png" alt="Fortera Credit Union Logo" id="forteraLogo">
         <div class="col align-self-center">
           <h3 class="header">IRA Distribution Calculator</h3>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">Desired Net</span>
+          <div class="forms">
+            <div class="input-field">
+              <i class="material-icons prefix">attach_money</i>
+              <input type="number" class="validate" id="desNet" min="0">
+              <label for="desNet">Desired Net Withholdings</label>
             </div>
-            <input type="number" class="form-control" placeholder="0.00" aria-label="Desired Net" aria-describedby="basic-addon1" id="desNet">
-          </div>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">Total Withholdings (%)</span>
+            <div class="input-field">
+              <i class="material-icons prefix">%</i>
+              <input type="number" class="validate" id="totalWith" min="0">
+              <label for="totalWith">Total Withholdings (%)</label>
             </div>
-            <input type="number" class="form-control" placeholder="0.00" aria-label="Total Withholdings" aria-describedby="basic-addon1" id="totalWith">
-          </div>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">Fee</span>
+            <div class="input-field">
+              <i class="material-icons prefix">add_comment</i>
+              <input type="number" class="validate" id="fee">
+              <label for="fee">Fees</label>
             </div>
-            <input type="number" class="form-control" placeholder="0.00" aria-label="Fees" aria-describedby="basic-addon1" id="fee">
-          </div>
-          <button class="btn btn-primary" id="totalButton" type="button">Calculate</button>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">Total</span>
+            <a class="waves-effect waves-light btn" id="totalButton"><i class="material-icons right">blur_on</i>Calculate</a>
+            <div class="input-field">
+              <i class="material-icons prefix">monetization_on</i>
+              <input type="number" class="validate" id="total" disabled value="0">
+              <label class="active" for="total">Total</label>
             </div>
-            <input type="text" class="form-control" placeholder="0.00" aria-label="total" aria-describedby="basic-addon1" id="total" readonly>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="dist/app.js"></script>
   </body>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="dist/app.js"></script>
 </html>
