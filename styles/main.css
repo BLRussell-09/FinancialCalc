@@ -22,9 +22,20 @@ body{
 
 #totalButton{
   margin-bottom: 1em;
+  background-color: #0095c8;
 }
 
 #forteraLogo{
 width: 14.8125em;
 height: 5.75em;
+}
+
+i{
+  color: white;
+}
+input#total{
+  color: white;
+}
+input{
+  color: white;
 }

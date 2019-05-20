@@ -10,7 +10,7 @@ function netTotal()
   var withholdings = document.getElementById('totalWith').value * 1;
   var stateWithholdings = document.getElementById('fee').value * 1;
   var totalWithholdings = (withholdings + stateWithholdings);
-  var fee = document.getElementById('fee').value * 1;
+  //var fee = document.getElementById('fee').value * 1;
   var total = document.getElementById('total');
   console.log(totalWithholdings);
   totalWithholdings = 1 - (totalWithholdings / 100);
