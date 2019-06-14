@@ -1,10 +1,24 @@
+@font-face{
+  font-family: 'BoosterFY';
+  src: url('/fonts/BoosterNextFY.eot');
+  src: url('/fonts/BoosterNextFY.ttf') format('truetype'),
+       url('/fonts/BoosterNextFY.woff') format('woff');
+}
+
 body{
+  font-family: 'BoosterFY', Helvetica, sans-serif;
   background: no-repeat center center fixed;
-  background-image: linear-gradient(to bottom, #002d72, #6cc24a);
-  background-size: cover;
+  background:
+    url('/images/fcuO.png') no-repeat center center fixed,
+    linear-gradient(to bottom, #002d72, #00a19b 150%) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-size: 41%, cover;
+  background-position: -25% 4%;
+  height: 100%;
+  overflow: auto;
+
 }
 
 #title{

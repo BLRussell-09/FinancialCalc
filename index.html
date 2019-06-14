@@ -17,30 +17,36 @@
     </h1>
     <div class="container">
       <div class="row">
-        <img src="./images/Fortera237x92.png" alt="Fortera Credit Union Logo" id="forteraLogo">
         <div class="col align-self-center">
-          <h3 class="header">IRA Distribution Calculator</h3>
-          <div class="forms">
-            <div class="input-field">
-              <i class="material-icons prefix">attach_money</i>
-              <input type="number" class="validate" id="desNet" min="0">
-              <label for="desNet">Desired Net Withholdings</label>
-            </div>
-            <div class="input-field">
-              <i class="material-icons prefix">%</i>
-              <input type="number" class="validate" id="federalWith" min="0">
-              <label for="federalWith">Federal Withholdings (%)</label>
-            </div>
-            <div class="input-field">
-              <i class="material-icons prefix">%</i>
-              <input type="number" class="validate" id="stateWith">
-              <label for="stateWith">State Withholdings (%)</label>
-            </div>
-            <a class="waves-effect waves-light btn" id="totalButton"><i class="material-icons right">blur_on</i>Calculate</a>
-            <div class="input-field">
-              <i class="material-icons prefix">monetization_on</i>
-              <input type="number" class="validate" id="total" disabled value="0">
-              <label class="active" for="total">Total</label>
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <div class="col m12 offset-m5 align-self-center">
+                <img src="./images/Fortera237x92.png" alt="Fortera Credit Union Logo" id="forteraLogo" class="center-align">
+              </div>
+              <span class="card-title">IRA Distribution Calculator</span>
+              <div class="forms">
+                <div class="input-field">
+                  <i class="material-icons prefix">attach_money</i>
+                  <input type="number" class="validate" id="desNet" min="0">
+                  <label for="desNet">Desired Net Withholdings</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">%</i>
+                  <input type="number" class="validate" id="federalWith" min="0">
+                  <label for="federalWith">Federal Withholdings (%)</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">%</i>
+                  <input type="number" class="validate" id="stateWith">
+                  <label for="stateWith">State Withholdings (%)</label>
+                </div>
+                <a class="waves-effect waves-light btn" id="totalButton"><i class="material-icons right">blur_on</i>Calculate</a>
+                <div class="input-field">
+                  <i class="material-icons prefix">monetization_on</i>
+                  <input type="number" class="validate" id="total" disabled value="0">
+                  <label class="active" for="total">Total</label>
+                </div>
+              </div>
             </div>
           </div>
         </div>
